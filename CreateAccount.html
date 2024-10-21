@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <header>
+    <img src="/img/logo.png" id="logo">
+    </header>
+
+    <main>
+        <h1>Create new Account</h1>
+        <h2>Already Registered? <a href="/Projetos/Login Básico/Login.html">Log in here</a></h2>
+
+        <form id="form">
+            <Label for="Name">
+                <h3 id="name_label">Name</h3>
+                <input type="text" name="name" placeholder="João da Silva" id="input_name">
+            </Label>
+
+            <Label for="Email">
+                <h3 id="name_label">Email</h3>
+                <input type="email" name="email" placeholder="joaodasilva@gmail.com" id="input_email">
+            </Label>
+
+            <Label for="Password">
+                <h3 id="name_label">Password</h3>
+                <input type="password" name="password" placeholder="**********" id="input_password">
+            </Label>
+
+            <Label for="Date of Birth">
+                <h3 id="name_label">Date of Birth</h3>
+                <input type="text" placeholder="DD/MM/YYYY" onfocus="this.type='date'" onblur="if (!this.value) this.type='text'">
+            </Label>
+        </form>
+         <button id="button" type="submit">Sign Up</button>
+    </main>
+    
+</body>
+</html>
